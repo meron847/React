@@ -5,13 +5,9 @@ class Counter extends Component {
     count:0
    };
 
-   /*constructor(){
-     super();
-     this.handleIncrement = this.handleIncrement.bind(this);
-   }*/
-//you can use an arow function  with out constructur or you can use counstructur without arrow function
+  
    handleIncrement = ()=>{
-    console.log("Increment Clicked", this);
+    this.setState({ count: this.state.count + 1})
    }
 
     render() { 
